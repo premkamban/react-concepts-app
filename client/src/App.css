@@ -2,6 +2,14 @@
   text-align: center;
 }
 
+#inlineDiv {
+  display: flex;
+}
+
+#countCal {
+  padding: 10 15 10;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;

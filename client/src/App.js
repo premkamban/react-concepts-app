@@ -1,23 +1,25 @@
-import logo from './logo.svg';
 import './App.css';
+// import Modal from './Modal'
+// import RefDemo from './RefDemo'
+
+import Callback from './container/HomePage/Callback'
+import Compoff from './component/Compoff'
+import Checkbox from './container/HomePage/Checkout'
+import Navbar from './component/Navbar';
+import ToolkitCounter from './component/ToolkitCounter';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar />
+      <Compoff />
+      {/*<RefDemo />*/}
+      {/*<Modal />*/}
+      <Callback />
+      <div id='countCal'>
+        <Checkbox />
+      </div>
+      <ToolkitCounter />
     </div>
   );
 }
